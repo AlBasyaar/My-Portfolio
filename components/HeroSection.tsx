@@ -52,20 +52,26 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8">Web Developer</p>
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Passionate about creating beautiful, functional, and user-centered digital experiences.
+          I love building web apps that not only look great, but also make people’s lives a little easier and more fun.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://www.canva.com/design/DAGtS0tQ7UQ/pzpBFV2OZfLB1Ty92NI-_g/edit?utm_content=DAGtS0tQ7UQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             target="_blank"
             rel="noopener noreferrer"
+            className="w-full sm:w-auto"
           >
-            <Button size="lg" className="flex items-center gap-2">
+            <Button size="lg" className="w-full sm:w-auto flex items-center gap-2">
               <Download size={20} />
               Download CV
             </Button>
           </a>
-          <Button variant="outline" size="lg" onClick={() => scrollToSection("contact")}>
+          <Button
+            variant="outline"
+            size="lg"
+            className="w-full sm:w-auto"
+            onClick={() => scrollToSection("contact")}
+          >
             Get In Touch
           </Button>
         </div>
