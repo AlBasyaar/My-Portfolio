@@ -56,9 +56,8 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://www.canva.com/design/DAGtS0tQ7UQ/pzpBFV2OZfLB1Ty92NI-_g/edit?utm_content=DAGtS0tQ7UQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/BASYSYAAR-CV.pdf"
+            download="BASYSYAAR-CV.pdf"
             className="w-full sm:w-auto"
           >
             <Button size="lg" className="w-full sm:w-auto flex items-center gap-2">

@@ -2,19 +2,19 @@
 
 export default function TechStackSection() {
   const topRowTechs = [
-    { name: "HTML", icon: "🌐", color: "bg-orange-100 text-orange-600" },
-    { name: "CSS", icon: "⚫", color: "bg-gray-100 text-gray-800" },
-    { name: "Javascript", icon: "⚛️", color: "bg-blue-100 text-blue-600" },
-    { name: "React.Js", icon: "🟨", color: "bg-yellow-100 text-yellow-600" },
-    { name: "Next.js", icon: "⚫", color: "bg-gray-100 text-gray-800" },
+    { name: "HTML", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/html_mrbpyy.jpg" },
+    { name: "CSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/css_w746l6.webp" },
+    { name: "Javascript", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752744052/js_x7cq7t.png" },
+    { name: "React.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/react_jlr7me.png" },
+    { name: "Next.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/nextjs_p7vwmy.webp" },
   ]
 
   const bottomRowTechs = [
-    { name: "TypeScript", icon: "🔷", color: "bg-blue-100 text-blue-600" },
-    { name: "Tailwind CSS", icon: "🌊", color: "bg-cyan-100 text-cyan-600" },
-    { name: "MySQL", icon: "🐬", color: "bg-blue-100 text-blue-600" },
-    { name: "Laragon", icon: "🔷", color: "bg-blue-100 text-blue-600" },
-    { name: "Tailwind CSS", icon: "🌊", color: "bg-cyan-100 text-cyan-600" },
+    { name: "TypeScript", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/Typescript_bbi3km.png" },
+    { name: "PHP", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/php_u5bepc.png" },
+    { name: "MySQL", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/MySQL_bgj0lk.webp" },
+    { name: "Laragon", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/laragon_kawtgp.jpg" },
+    { name: "TailwindCSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/tailwind_ilzkwa.png" },
   ]
 
   return (
@@ -27,14 +27,14 @@ export default function TechStackSection() {
         <div className="space-y-8">
           {/* Top Row - Sliding Left */}
           <div className="relative">
-            <div className="flex animate-slide-left">
+            <div className="flex animate-slide-left group">
               {[...topRowTechs, ...topRowTechs].map((tech, index) => (
                 <div
                   key={index}
-                  className={`flex items-center gap-3 px-6 py-4 mx-2 rounded-xl border bg-background shadow-sm hover:shadow-md transition-shadow whitespace-nowrap min-w-fit ${tech.color}`}
+                  className="flex items-center gap-2 px-4 py-2 mx-1 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow whitespace-nowrap min-w-[150px]"
                 >
-                  <span className="text-2xl">{tech.icon}</span>
-                  <span className="font-semibold text-lg">{tech.name}</span>
+                  <img src={tech.icon} alt={tech.name} className="w-27 h-8 object-contain" />
+                  <span className="font-normal text-base">{tech.name}</span>
                 </div>
               ))}
             </div>
@@ -42,14 +42,14 @@ export default function TechStackSection() {
 
           {/* Bottom Row - Sliding Right */}
           <div className="relative">
-            <div className="flex animate-slide-right">
+            <div className="flex animate-slide-right group">
               {[...bottomRowTechs, ...bottomRowTechs].map((tech, index) => (
                 <div
                   key={index}
-                  className={`flex items-center gap-3 px-6 py-4 mx-2 rounded-xl border bg-background shadow-sm hover:shadow-md transition-shadow whitespace-nowrap min-w-fit ${tech.color}`}
+                  className="flex items-center gap-2 px-4 py-2 mx-1 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow whitespace-nowrap min-w-[150px]"
                 >
-                  <span className="text-2xl">{tech.icon}</span>
-                  <span className="font-semibold text-lg">{tech.name}</span>
+                  <img src={tech.icon} alt={tech.name} className="w-27 h-8 object-contain" />
+                  <span className="font-normal text-base">{tech.name}</span>
                 </div>
               ))}
             </div>
@@ -82,6 +82,11 @@ export default function TechStackSection() {
 
         .animate-slide-right {
           animation: slide-right 30s linear infinite;
+        }
+
+        .group:hover .animate-slide-left,
+        .group:hover .animate-slide-right {
+          animation-play-state: paused;
         }
       `}</style>
     </section>
