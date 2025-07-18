@@ -32,7 +32,7 @@ export default function TechStackSection() {
                   key={index}
                   className="flex items-center gap-3 px-6 py-3 mx-2 rounded-lg border bg-white shadow-sm hover:shadow-md hover:bg-gray-100 transition-all whitespace-nowrap min-w-[200px]"
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
+                  <img src={tech.icon} alt={tech.name} className="w-25 h-8 object-contain" />
                   <span className="font-medium text-base">{tech.name}</span>
                 </div>
               ))}
@@ -46,7 +46,7 @@ export default function TechStackSection() {
                   key={index}
                   className="flex items-center gap-3 px-6 py-3 mx-2 rounded-lg border bg-white shadow-sm hover:shadow-md hover:bg-gray-100 transition-all whitespace-nowrap min-w-[200px]"
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
+                  <img src={tech.icon} alt={tech.name} className="w-25 h-8 object-contain" />
                   <span className="font-medium text-base">{tech.name}</span>
                 </div>
               ))}
