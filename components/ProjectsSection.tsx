@@ -66,7 +66,7 @@ export default function ProjectsSection() {
     {
       title: "Keuanganku",
       description: "An application to find recipes based on ingredients using a public API.",
-      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752801382/Cuplikan_layar_2025-07-17_215500_hpr07q.png",
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752805685/Cuplikan_layar_2025-07-18_092738_z1dif9.png",
       tech: ["Javascript", "Html", "Css"],
       github: "https://github.com/AlBasyaar/KeuanganKu",
       demo: "#",

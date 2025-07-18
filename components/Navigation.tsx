@@ -24,20 +24,19 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
     scrollToSection(sectionId)
   }
 
-  // Logic for hide/show on scroll (applies to both desktop and mobile)
   useEffect(() => {
     const handleScroll = () => {
       if (typeof window !== "undefined") {
         const currentScrollY = window.scrollY
 
         if (currentScrollY === 0) {
-          // At the very top of the page (Home section), hide navbar
+          
           setIsVisible(false)
         } else if (currentScrollY > lastScrollY) {
-          // Scrolling down, hide navbar
+
           setIsVisible(false)
         } else {
-          // Scrolling up (and not at the very top), show navbar
+
           setIsVisible(true)
         }
         setLastScrollY(currentScrollY)
@@ -54,10 +53,10 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
     <nav
       className={cn(
         "fixed top-8 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur-md border rounded-full shadow-lg z-50 px-4 py-2 transition-all duration-300 ease-in-out",
-        isVisible ? "translate-y-0 opacity-100" : "-translate-y-24 opacity-0", // -translate-y-24 untuk sembunyi ke atas
-        "flex items-center justify-center space-x-2 sm:space-x-4", // Spasi antar item lebih kecil di mobile
-        "overflow-x-auto whitespace-nowrap", // Tetap izinkan scroll horizontal jika sangat diperlukan
-        "max-w-[calc(100vw-2rem)]", // Batasi lebar agar tidak melebihi viewport
+        isVisible ? "translate-y-0 opacity-100" : "-translate-y-24 opacity-0",
+        "flex items-center justify-center space-x-2 sm:space-x-4", 
+        "overflow-x-auto whitespace-nowrap", 
+        "max-w-[calc(100vw-2rem)]",
       )}
     >
       {navItems.map((item) => (
