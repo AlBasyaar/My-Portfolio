@@ -2,8 +2,8 @@
 
 export default function TechStackSection() {
   const topRowTechs = [
-    { name: "HTML", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/html_mrbpyy.jpg" },
-    { name: "CSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/css_w746l6.webp" },
+    { name: "HTML", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752804463/html_ppgpoy.png" },
+    { name: "CSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752804886/css_vn52ga.webp" },
     { name: "Javascript", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752744052/js_x7cq7t.png" },
     { name: "React.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/react_jlr7me.png" },
     { name: "Next.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/nextjs_p7vwmy.webp" },
