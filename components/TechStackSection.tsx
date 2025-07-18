@@ -27,7 +27,7 @@ export default function TechStackSection() {
         <div className="space-y-8">
           {/* Top Row - Sliding Left */}
           <div className="relative hover:pause-animation">
-            <div className="flex animate-slide-left">
+            <div className="flex w-max animate-slide-left">
               {[...topRowTechs, ...topRowTechs].map((tech, index) => (
                 <div
                   key={index}
@@ -42,7 +42,7 @@ export default function TechStackSection() {
 
           {/* Bottom Row - Sliding Right */}
           <div className="relative hover:pause-animation">
-            <div className="flex animate-slide-right">
+            <div className="flex w-max animate-slide-right">
               {[...bottomRowTechs, ...bottomRowTechs].map((tech, index) => (
                 <div
                   key={index}
@@ -77,11 +77,11 @@ export default function TechStackSection() {
         }
 
         .animate-slide-left {
-          animation: slide-left 30s linear infinite;
+          animation: slide-left 35s linear infinite;
         }
 
         .animate-slide-right {
-          animation: slide-right 30s linear infinite;
+          animation: slide-right 35s linear infinite;
         }
 
         .hover\:pause-animation:hover .animate-slide-left,
