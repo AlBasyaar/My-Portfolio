@@ -63,6 +63,14 @@ export default function ProjectsSection() {
       github: "https://github.com/AlBasyaar/inventaris-sekolah-management",
       demo: "#",
     },
+    {
+      title: "Keuanganku",
+      description: "An application to find recipes based on ingredients using a public API.",
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752801382/Cuplikan_layar_2025-07-17_215500_hpr07q.png",
+      tech: ["Php", "Css"],
+      github: "https://github.com/AlBasyaar/inventaris-sekolah-management",
+      demo: "#",
+    },
   ]
 
   return (
