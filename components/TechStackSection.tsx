@@ -26,14 +26,14 @@ export default function TechStackSection() {
 
         <div className="space-y-8">
           {/* Top Row - Sliding Left */}
-          <div className="relative">
-            <div className="flex animate-slide-left group">
+          <div className="relative hover:pause-animation">
+            <div className="flex animate-slide-left">
               {[...topRowTechs, ...topRowTechs].map((tech, index) => (
                 <div
                   key={index}
                   className="flex items-center gap-2 px-4 py-2 mx-1 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow whitespace-nowrap min-w-[150px]"
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-27 h-8 object-contain" />
+                  <img src={tech.icon} alt={tech.name} className="w-26 h-8 object-contain" />
                   <span className="font-normal text-base">{tech.name}</span>
                 </div>
               ))}
@@ -41,14 +41,14 @@ export default function TechStackSection() {
           </div>
 
           {/* Bottom Row - Sliding Right */}
-          <div className="relative">
-            <div className="flex animate-slide-right group">
+          <div className="relative hover:pause-animation">
+            <div className="flex animate-slide-right">
               {[...bottomRowTechs, ...bottomRowTechs].map((tech, index) => (
                 <div
                   key={index}
                   className="flex items-center gap-2 px-4 py-2 mx-1 rounded-lg border bg-white shadow-sm hover:shadow-md transition-shadow whitespace-nowrap min-w-[150px]"
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-27 h-8 object-contain" />
+                  <img src={tech.icon} alt={tech.name} className="w-26 h-8 object-contain" />
                   <span className="font-normal text-base">{tech.name}</span>
                 </div>
               ))}
@@ -84,8 +84,8 @@ export default function TechStackSection() {
           animation: slide-right 30s linear infinite;
         }
 
-        .group:hover .animate-slide-left,
-        .group:hover .animate-slide-right {
+        .hover\:pause-animation:hover .animate-slide-left,
+        .hover\:pause-animation:hover .animate-slide-right {
           animation-play-state: paused;
         }
       `}</style>
