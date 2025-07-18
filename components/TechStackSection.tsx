@@ -6,15 +6,16 @@ export default function TechStackSection() {
     { name: "CSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752804886/css_vn52ga.webp" },
     { name: "Javascript", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752744052/js_x7cq7t.png" },
     { name: "React.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/react_jlr7me.png" },
-    { name: "Next.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/nextjs_p7vwmy.webp" },
+    { name: "Next.js", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821220/nextjs_p7vwmy-removebg-preview_zm8pt2.png" },
   ]
 
   const bottomRowTechs = [
     { name: "TypeScript", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/Typescript_bbi3km.png" },
-    { name: "PHP", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752811123/php_yx6fuo.png" },
+    { name: "PHP", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752820196/php_tvko1h.png" },
     { name: "MySQL", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740735/MySQL_bgj0lk.webp" },
-    { name: "Laragon", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/laragon_kawtgp.jpg" },
-    { name: "TailwindCSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752740734/tailwind_ilzkwa.png" },
+    { name: "Laragon", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821221/laragon-removebg-preview_reyoap.png" },
+    { name: "TailwindCSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821220/tailwind_ilzkwa-removebg-preview_lzxe8m.png" },
+    { name: "Bootstrap", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821654/bootstrap-removebg-preview_jvsunp.png" },
   ]
 
   return (
