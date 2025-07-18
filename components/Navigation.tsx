@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { Sun, Moon } from "lucide-react"
 
 interface NavigationProps {
   activeSection: string
@@ -12,6 +13,24 @@ interface NavigationProps {
 export default function Navigation({ activeSection, scrollToSection }: NavigationProps) {
   const [isVisible, setIsVisible] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [theme, setTheme] = useState("light")
+
+  useEffect(() => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    setTheme(prefersDark ? "dark" : "light")
+  }, [])
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"))
+  }
 
   const navItems = [
     { id: "home", label: "Home" },
@@ -77,6 +96,15 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
         className="flex-shrink-0 text-sm sm:text-base"
       >
         Hire Me
+      </Button>
+      <Button
+        size="icon"
+        variant="ghost"
+        onClick={toggleTheme}
+        className="ml-2"
+        aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+      >
+        {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
       </Button>
     </nav>
   )

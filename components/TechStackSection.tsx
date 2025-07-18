@@ -21,7 +21,7 @@ export default function TechStackSection() {
     <section id="tech-stack" className="py-20 bg-muted/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Tech Stack</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">Tech Stack</h2>
         </div>
 
         <div className="space-y-10">
@@ -30,9 +30,9 @@ export default function TechStackSection() {
               {[...topRowTechs, ...topRowTechs].map((tech, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 px-6 py-3 mx-2 rounded-lg border bg-white shadow-sm hover:shadow-md hover:bg-gray-100 transition-all whitespace-nowrap min-w-[200px]"
+                  className="flex items-center gap-3 px-6 py-3 mx-2 rounded-lg border shadow-sm transition-all whitespace-nowrap min-w-[200px] bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-black dark:text-white"
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-25 h-8 object-contain" />
+                  <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
                   <span className="font-medium text-base">{tech.name}</span>
                 </div>
               ))}
@@ -44,9 +44,9 @@ export default function TechStackSection() {
               {[...bottomRowTechs, ...bottomRowTechs].map((tech, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 px-6 py-3 mx-2 rounded-lg border bg-white shadow-sm hover:shadow-md hover:bg-gray-100 transition-all whitespace-nowrap min-w-[200px]"
+                  className="flex items-center gap-3 px-6 py-3 mx-2 rounded-lg border shadow-sm transition-all whitespace-nowrap min-w-[200px] bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-black dark:text-white"
                 >
-                  <img src={tech.icon} alt={tech.name} className="w-25 h-8 object-contain" />
+                  <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
                   <span className="font-medium text-base">{tech.name}</span>
                 </div>
               ))}
@@ -82,8 +82,6 @@ export default function TechStackSection() {
           animation: slide-right 30s linear infinite;
         }
 
-        /* This rule now correctly pauses the animation of the .animate-slide-left/.animate-slide-right div
-           when its parent with the 'group' class is hovered. */
         .group:hover .animate-slide-left,
         .group:hover .animate-slide-right {
           animation-play-state: paused;
