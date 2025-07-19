@@ -71,7 +71,7 @@ export default function ProjectsSection() {
     },
     {
       title: "my-noteebook",
-      description: "A simple personal finance tracker to manage income and expenses efficiently.",
+      description: "A simple and minimalistic notes app to write, save, and organize your thoughts easily.",
       image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752935879/Cuplikan_layar_2025-07-19_213751_rjdloh.png",
       tech: ["Javascript", "Css"],
       github: "https://github.com/AlBasyaar/Notes-app",
