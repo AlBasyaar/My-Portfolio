@@ -35,7 +35,7 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "tech-stack", label: "Tech Stack" },
+    { id: "tech-stack", label: "Skills" },
     { id: "projects", label: "Projects" },
   ]
 
