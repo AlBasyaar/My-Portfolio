@@ -16,6 +16,7 @@ export default function TechStackSection() {
     { name: "Laragon", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821221/laragon-removebg-preview_reyoap.png" },
     { name: "TailwindCSS", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821220/tailwind_ilzkwa-removebg-preview_lzxe8m.png" },
     { name: "Bootstrap", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752821654/bootstrap-removebg-preview_jvsunp.png" },
+    { name: "Git", icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1752985707/Git-Emblem-1080x675-removebg-preview_vkmhqf.png" },
   ]
 
   return (
