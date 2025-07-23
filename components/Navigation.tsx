@@ -15,17 +15,25 @@ export default function Navigation({ activeSection, scrollToSection }: Navigatio
   const [lastScrollY, setLastScrollY] = useState(0)
   const [theme, setTheme] = useState("light")
 
+  // Initialize theme from localStorage or system preference
   useEffect(() => {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-    setTheme(prefersDark ? "dark" : "light")
+    const storedTheme = localStorage.getItem("theme")
+    if (storedTheme) {
+      setTheme(storedTheme)
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+      setTheme(prefersDark ? "dark" : "light")
+    }
   }, [])
 
+  // Apply theme to documentElement and save to localStorage
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark")
     } else {
       document.documentElement.classList.remove("dark")
     }
+    localStorage.setItem("theme", theme) // Save theme to localStorage
   }, [theme])
 
   const toggleTheme = () => {
