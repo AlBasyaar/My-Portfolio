@@ -52,7 +52,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8">Web Developer</p>
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-          I love building web apps that not only look great, but also make people’s lives a little easier and more fun.
+          Saya suka membuat aplikasi web yang tidak hanya terlihat bagus, tetapi juga membuat hidup orang sedikit lebih mudah dan lebih menyenangkan.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

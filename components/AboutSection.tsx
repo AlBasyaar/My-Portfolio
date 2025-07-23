@@ -7,7 +7,7 @@ export default function AboutSection() {
     <section id="about" className="py-12 sm:py-16 lg:py-20 bg-muted/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-        
+
           <div className="flex items-center justify-between mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold">About Me</h2>
             <div className="flex-shrink-0">
@@ -23,18 +23,17 @@ export default function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
             <div className="space-y-4 sm:space-y-6">
               <p className="text-base sm:text-lg text-foreground leading-relaxed">
-                Currently, I am pursuing my education at SMK Negeri 69 Jakarta as a 12th-grade student majoring in Network and Application Information Systems (SIJA), which focuses on building, managing, and developing software applications.
+                Saat ini, saya sedang menempuh pendidikan di SMK Negeri 69 Jakarta sebagai siswa kelas 12 dengan jurusan Sistem Informatika Jaringan dan Aplikasi (SIJA), yang berfokus pada pembangunan, pengelolaan, dan pengembangan aplikasi perangkat lunak.
               </p>
 
               <p className="text-base sm:text-lg text-foreground leading-relaxed">
-                I am proficient in frontend technologies such as HTML, CSS, React, Next.js, and Tailwind CSS for creating responsive user interfaces, and backend technologies like PHP and Laravel for building servers and APIs, with MySQL and Laragon for database management.
+                Saya menguasai teknologi frontend seperti HTML, CSS, React, Next.js, dan Tailwind CSS untuk membuat antarmuka pengguna yang responsif, serta teknologi backend seperti PHP dan Laravel untuk membangun server dan API, dengan MySQL dan Laragon untuk pengelolaan basis data.
               </p>
 
               <p className="text-base sm:text-lg text-foreground leading-relaxed font-medium">
-                I have a passion for creating user-friendly and efficient web applications, and I am always eager to learn and grow in my field.
+                Saya memiliki semangat dalam menciptakan aplikasi web yang ramah pengguna dan efisien, serta selalu bersemangat untuk belajar dan berkembang di bidang ini.
               </p>
             </div>
-
 
           {/* Right Content - My Skills */}
           <div className="space-y-6 sm:space-y-8">

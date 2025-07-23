@@ -89,11 +89,8 @@ export default function ContactSection() {
           <Card>
             <CardHeader className="relative">
               <CardTitle>Contact Form</CardTitle>
-              <span className="absolute top-0 right-0 bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">
-                Idle
-              </span>
               <CardDescription>
-                You can reach out to me using the form below. I will get back to you shortly.
+                Anda dapat menghubungi saya menggunakan formulir di bawah ini. Saya akan segera menghubungi Anda.
               </CardDescription>
             </CardHeader>
             <CardContent>
